@@ -1,0 +1,68 @@
+/* fade */
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.28s;
+}
+ 
+.fade-enter,
+.fade-leave-active {
+  opacity: 0;
+}
+ 
+/* fade-transform */
+.fade-transform-leave-active,
+.fade-transform-enter-active {
+  transition: all .3s;
+}
+ 
+.fade-transform-enter {
+  opacity: 0;
+  transform: translateX(-10px);
+}
+ 
+.fade-transform-leave-to {
+  opacity: 0;
+  transform: translateX(10px);
+}
+// 主要区域
+.screenBox{
+  width: calc(100% - 0%);
+  padding: 20px;
+  background: #f0f2f5;
+}
+
+// 按钮处理
+.ant-btn{
+  height: 40px;
+}
+// input-search 按钮样式高度处理
+.ant-input-group-addon .ant-btn{
+  height: 32px;
+}
+// 滚动条 - y轴
+.ant-table-body::-webkit-scrollbar,
+body::-webkit-scrollbar{
+  height: 4px;
+  width: 4px;
+  /*滚动条宽度*/
+  background: none;
+  /*去除滚动条背景设置*/
+}
+.ant-table-body::-webkit-scrollbar-thumb,
+body::-webkit-scrollbar-thumb,
+.otherScroll::-webkit-scrollbar-thumb {
+  background-color: #1790FF;
+  /*滚动条颜色*/
+  border-radius: 5px;
+}
+.ant-table-body::-webkit-scrollbar-track,
+body::-webkit-scrollbar-track,
+.otherScroll::-webkit-scrollbar-track {
+  background-color: #16193E;
+}
+// main滚动条
+.otherScroll::-webkit-scrollbar {
+  height: 8px;
+  width: 8px;
+  background: none;
+}
